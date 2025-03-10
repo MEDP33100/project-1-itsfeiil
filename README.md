@@ -1,11 +1,13 @@
 # MEDP 33100 Project 1: Interactive Storytelling
 
 ## Project Overview
+SLIDES LINK: https://docs.google.com/presentation/d/1GcaLCqJsN3bC1xlpH0hLH3eMsMNepqkLrEr3xjWSxKk/edit?usp=sharing
 
 - Briefly describe the purpose of the project.
 - Explain the story you are telling through the webpage and the key interactive elements.
 
 ## Figma Design
+FIGMA LAYOUT LINK: https://drive.google.com/file/d/196NbiSmY6h1nHRKbOaPDsjF5WQxQ1o-W/view?usp=share_link
 
 - Provide a link to the Figma design of the webpage.
 - Briefly explain the design process and how the layout was planned in Figma.

@@ -1,1 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Tea Ceremony</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="backgroundMusic" loop autoplay>
+        <source src="tea-ceremony-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
 
+    <header>
+        <div class="intro">
+            <h1>Welcome to the Chinese Tea Ceremony</h1>
+            <button id="startBtn">Start the Tea Ceremony</button>
+        </div>
+    </header>
+
+<!-- how to make tea -->
+    <section id="ceremonySteps" class="hidden">
+        <h2>Step 1: Select Tea Leaves</h2>
+        <div class="tea-options">
+            <div class="tea" id="greenTea" onclick="selectTea('green')">
+                <img src="greentea.avif" alt="Green Tea">
+                <p>Green Tea</p>
+            </div>
+            <div class="tea" id="oolongTea" onclick="selectTea('oolong')">
+                <img src="oolongtea.avif" alt="Oolong Tea">
+                <p>Oolong Tea</p>
+            </div>
+            <div class="tea" id="puErhTea" onclick="selectTea('pu-erh')">
+                <img src="puerhtea.webp" alt="Pu-Erh Tea">
+                <p>Pu-Erh Tea</p>
+            </div>
+        </div>
+    <h2>Step 2: Prepare Utensils</h2>
+    <h4>Choose one of the teapots to prepare your tea</h4>
+    <div class="utensils">
+    <div>
+        <img src="teapot3.jpg" alt="Teapot" id="teapot1" >
+        <button class="learn-more-btn" onclick="learnMore('teapot1')">Learn More</button>
+    </div>
+    <div>
+        <img src="teapot1.jxl" alt="Teapot" id="teapot2" >
+        <button class="learn-more-btn" onclick="learnMore('teapot2')">Learn More</button>
+    </div>
+    <div>
+        <img src="teapot2.jpg" alt="Teapot" id="teapot3" >
+        <button class="learn-more-btn" onclick="learnMore('teapot3')">Learn More</button>
+    </div>
+    </div>
+        <h2>Step 3: Boil Water & Steep Tea</h2>
+        <button id="boilWaterBtn" onclick="boilWater()">Boil Water</button>
+        <div id="boilingAnimation" >
+            <img src="boil-water.gif" alt="Boiling Water" width="250" height="200">
+        </div>
+
+        <button id="pourTeaBtn" onclick="pourTea()">Pour Tea</button>
+        <div id="pouringAnimation" >
+            <img src="pour-tea.gif" alt="Pouring Tea" width="250" height="200">
+        </div>
+    </section>
+
+<!-- what is tea ceremony -->
+<section id="teaCeremonyExplanation">
+    <h2>What is the Chinese Tea Ceremony?</h2>
+    <p>The Chinese Tea Ceremony, or <strong>茶道</strong> (<em>Chá Dào</em>), is a time-honored tradition in China that goes beyond just simply drinking tea. It is more of an art form and a spiritual practice, it is a way to connect with others even nowadays. The ceremony focuses on respect, harmony, and the appreciation of tea as a natural and cultural treasure.</p>
+    <p>The term <strong>茶道</strong> (<em>Chá Dào</em>) means "The Way of Tea" or "Tea Path." In this practice, every element—from the selection of tea leaves to the pouring of water—holds symbolic significance and is approached with mindfulness.</p>
+    
+    <h3>Cultural Significance</h3>
+    <p>Throughout Chinese history, tea has been deeply embedded in various aspects of society, including philosophy, medicine, and daily life. The tea ceremony reflects the ancient Chinese principles of <strong>和</strong> (<em>Hé</em>, harmony), <strong>敬</strong> (<em>Jìng</em>, respect), <strong>清</strong> (<em>Qīng</em>, purity), and <strong>寂</strong> (<em>Jì</em>, tranquility).</p>
+
+    <h3>Tea Ceremony Rituals</h3>
+    <ul>
+        <li><strong>茶艺</strong> (<em>Chá Yì</em>)—Tea Art: The way the tea is prepared and served with great care and respect.</li>
+        <li><strong>温杯</strong> (<em>Wēn Bēi</em>)—Warming the Cups: Heating the cups before brewing the tea to ensure the tea stays at the optimal temperature.</li>
+        <li><strong>洗茶</strong> (<em>Xǐ Chá</em>)—Washing the Tea: A practice of rinsing the tea leaves briefly with hot water before the actual steeping, removing any impurities and awakening the leaves.</li>
+    </ul>
+    <h3>Tea as a Reflection of Harmony</h3>
+    <p>The tea ceremony symbolizes a balance between the elements of nature, the environment, and the person participating. Through this ceremony, individuals can cultivate peace, mindfulness, and gratitude. The experience of tea—its aroma, taste, and warmth—provides a sense of serenity and connects the tea drinker with nature's rhythm.</p>
+</section>
+
+<!-- tea varieties -->
+<section id="teaVarieties">
+        <h2>Explore Tea Varieties</h2>
+        <div class="tea-info">
+            <div class="tea-card" id="greenTeaCard" onclick="showTeaDetails('green')">
+                <h3>Green Tea</h3>
+                <p id="greenTeaLearnMore">Learn more</p>
+            </div>
+            <div class="tea-card" id="oolongTeaCard" onclick="showTeaDetails('oolong')">
+                <h3>Oolong Tea</h3>
+                <p id="oolongTeaLearnMore">Learn more</p>
+            </div>
+            <div class="tea-card" id="puErhTeaCard" onclick="showTeaDetails('pu-erh')">
+                <h3>Pu-Erh Tea</h3>
+                <p id="puErhTeaLearnMore">Learn more</p>
+            </div>
+        </div>
+ </section>
+
+    <div id="teaDetailsPopup" class="popup hidden">
+        <div class="popup-content">
+            <span id="closePopup" class="close-popup">&times;</span>
+            <h3 id="popupTitle">Tea Name</h3>
+            <p id="popupDescription">Description goes here.</p>
+            <p id="popupBenefits">Health Benefits: </p>
+            <p id="popupBrewingTips">Brewing Tips: </p>
+        </div>
+    </div>
+
+<!-- the quote -->
+    <section id="philosophy">
+        <h2>Philosophical Insights</h2>
+        <div class="philosophy-quote" onclick="showQuote('confucius')">
+            <p>"Tea is the harmony of nature, the reflection of peace."</p>
+        </div>
+    </section>
+
+    <footer>
+        <button id="quizBtn" onclick="startQuiz()">Take the Quiz</button>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+
+    <!-- take a quiz -->
+    <section id="quizSection" class="hidden">
+        <h2>Tea Knowledge Quiz</h2>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Which tea is best known for its calming effects?</p>
+                <label>
+                    <input type="radio" name="q1" value="green">
+                    Green Tea
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="oolong">
+                    Oolong Tea
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="pu-erh">
+                    Pu-Erh Tea
+                </label>
+            </div>
+            <div class="question">
+                <p>2. What is the traditional tea preparation called in China?</p>
+                <label>
+                    <input type="radio" name="q2" value="chaDao">
+                    Cha Dao (Tea Way)
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="chaYu">
+                    Cha Yu (Tea Dance)
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="chaShi">
+                    Cha Shi (Tea Art)
+                </label>
+            </div>
+            <button type="button" onclick="checkQuiz()">Submit Quiz</button>
+        </form>
+        <div id="quizResult"></div>
+    </section>
+
+</body>
+</html>

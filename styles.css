@@ -1,0 +1,319 @@
+body {
+    font-family: 'Serif', sans-serif;
+    background: #a9be7b;
+    color: #3f503b;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background: #c0d695;
+    color: #4b2f12;
+}
+
+button {
+    background-color: #82896b;
+    border: none;
+    padding: 15px 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #68945c;
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+}
+
+.hidden {
+    display: none;
+}
+
+#ceremonySteps {
+    text-align: center;
+    padding: 40px;
+}
+
+#ceremonySteps h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#ceremonySteps .tea-options,
+#ceremonySteps .utensils {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+}
+
+#ceremonySteps .tea,
+#ceremonySteps .utensils div {
+    text-align: center;
+    max-width: 200px; 
+}
+
+#ceremonySteps .tea img,
+#ceremonySteps .utensils img {
+    width: 150px; 
+    height: auto;
+}
+
+#ceremonySteps h4 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#boilingAnimation,
+#pouringAnimation {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.utensils {
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+button {
+    display: block;
+    margin: 20px auto; 
+}
+
+.tea-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.tea {
+    text-align: center;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.tea img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.tea:hover img {
+    transform: scale(1.1);
+}
+
+#boilingAnimation, #pouringAnimation {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#teaCeremonyExplanation {
+    padding: 40px;
+    background-color: #f7f1e1;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#teaCeremonyExplanation h2 {
+    font-size: 2.5em;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+    color: #4b2f12;
+}
+
+#teaCeremonyExplanation h3 {
+    font-size: 1.8em;
+    font-family: 'Georgia', serif;
+    color: #3f503b;
+    margin-top: 20px;
+}
+
+#teaCeremonyExplanation p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #3f503b;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+#teaCeremonyExplanation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    text-align: left;
+    font-size: 1.2em;
+    color: #3f503b;
+    max-width: 700px;
+}
+
+#teaCeremonyExplanation ul li {
+    margin-bottom: 15px;
+}
+
+#teaCeremonyExplanation strong {
+    color: #4b2f12;
+}
+
+#teaVarieties {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 40px;
+    background-color: #a8bf8f;
+}
+
+.tea-card {
+    background-color: #788a6f;
+    padding: 30px;
+    margin: 10px;
+    width: 250px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tea-card:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#philosophy {
+    padding: 40px;
+    text-align: center;
+    background-color: #f0e6d2;
+}
+
+.philosophy-quote {
+    font-style: italic;
+    font-size: 22px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #d1c1a0;
+}
+
+button:hover {
+    background-color: #a8a38d;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.tea:hover img {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.tea-card:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.utensils img {
+    width: 150px; 
+    height: auto; 
+    max-width: 100%; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; 
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.popup h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.popup p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.popup .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.learn-more-btn {
+    background-color: #4b2f12;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    margin: 10px auto;
+}
+
+.learn-more-btn:hover {
+    background-color: #3d2511;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .tea-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tea-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #ceremonySteps, #quizSection {
+        padding: 20px;
+    }
+}
