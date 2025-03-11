@@ -30,7 +30,7 @@ FIGMA LAYOUT LINK: https://drive.google.com/file/d/196NbiSmY6h1nHRKbOaPDsjF5WQxQ
 
 ## Live Demo
 
-- Include a link to the live version of the project hosted on GitHub Pages.
+- Link: https://drive.google.com/file/d/1vVrstc3LTJGalRnvVOalkJn89LVLV3AE/view?usp=share_link
 
 ## Credits
 
