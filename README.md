@@ -15,17 +15,17 @@ FIGMA LAYOUT LINK: https://drive.google.com/file/d/196NbiSmY6h1nHRKbOaPDsjF5WQxQ
 
 ## Features
 
-- List the key features of the project, including:
-    - **Animations**: Describe the animations you implemented (e.g., CSS transitions, GSAP effects).
-    - **Sound Effects**: Specify where sound effects are used and how they enhance the user experience.
-    - **User-triggered Events**: Explain how users interact with the page (e.g., clicking, scrolling, hovering) and how the page responds.
-    - **Responsive Design**: Explain how the design adapts to different devices (e.g., desktop, tablet, mobile).
+- key features of the project, including:
+    - **Animations**: CSS transitions, GSAP effects for the quiz and button clicking/hovering.
+    - **Sound Effects**: Soundeffects for the actions in one of the step of the tea ceremony to make it more realistic for users.
+    - **User-triggered Events**: Users can scroll and click/ hover onto bottoms for further info or instructions.
+    - **Responsive Design**: Fits all pages on desktop, tablet, and mobile.
 
 ## Technologies Used
 
 - List the technologies and tools used in the project:
     - **Languages**: HTML, CSS, JavaScript
-    - **Libraries**: (e.g., GSAP for animations)
+    - **Libraries**: GSAP
     - **Other**: GitHub Pages for hosting, Figma for design
 
 ## Live Demo
@@ -34,9 +34,10 @@ FIGMA LAYOUT LINK: https://drive.google.com/file/d/196NbiSmY6h1nHRKbOaPDsjF5WQxQ
 
 ## Credits
 
-- List any third-party assets used in the project (e.g., sound effects, images, fonts) and provide proper attribution.
-- Acknowledge any resources, tutorials, or references you used to help complete the project.
+- Soundeffects & BGM from website "Pixabay"
+
 
 ## Future Enhancements
 
-- List any features you would’ve liked to add if given more time
+- More animations without clicking
+- Fading in/out effects
